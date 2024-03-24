@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-    A fabfile that generates compressed files and folders for the web_static project
+    A fabfile that generates compressed files
+    and folders for the web_static project
 """
 from fabric.api import local
 from os.path import isdir

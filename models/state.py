@@ -31,7 +31,7 @@ class State(BaseModel, Base):
                 result.append(elem)
         return (result)
     
-    if getenv("HBNB_TYPE_STORAGE") != "db":
+    if models.storage_type != "db":
         @property
         def cities(self):
             '''Gets a list of all realted city objects.'''
